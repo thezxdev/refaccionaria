@@ -7,7 +7,7 @@ export const AppRouter = () => {
     <Routes>
 
       {/* Rutas privadas */}
-      <Route path="/auth*" element={ <AuthRoutes /> } />
+      <Route path="/auth/*" element={ <AuthRoutes /> } />
 
       {/* Rutas públicas */}
       <Route path="/*" element={ <RylyRoutes /> } />
