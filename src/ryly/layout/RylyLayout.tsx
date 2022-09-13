@@ -1,7 +1,6 @@
-import { Box, Toolbar } from '@mui/material';
+import { Box } from '@mui/material';
 import { FC } from 'react';
 import { MiniDrawer } from '../components/MiniDrawer';
-import { SideMenu } from '../components/SideMenu';
 
 interface Props {
   children?: React.ReactNode
@@ -9,7 +8,8 @@ interface Props {
 
 export const RylyLayout: FC<Props> = ({ children }) => {
   return (
-    <Box sx={{ display: 'flex' }}>
+    // display: 'flex'
+    <Box>
       
       <MiniDrawer children={ children } />
     
