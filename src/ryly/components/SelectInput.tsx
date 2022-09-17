@@ -15,9 +15,10 @@ interface items {
 interface Props {
   title: string;
   items: items[];
+  widthSize?: number;
 }
 
-export const SelectInput: FC<Props> = ({ title, items }) => {
+export const SelectInput: FC<Props> = ({ title, items, widthSize }) => {
 
   const [state, setState] = useState<string>('');
 
@@ -26,7 +27,10 @@ export const SelectInput: FC<Props> = ({ title, items }) => {
   }
 
   return (
-    <FormControl variant="standard" sx={{ width: 200 }}>
+    <FormControl
+      variant="standard"
+      sx={{ width: ( widthSize ? widthSize : '100%' ), alignSelf: 'flex-end' }}
+    >
       <InputLabel
         id="select-label"
       >

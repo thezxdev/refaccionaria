@@ -33,7 +33,7 @@ export const ProductsPage = () => {
         </Grid>
 
         <Grid item>
-          <SelectInput items={items} title="Categorías" />
+          <SelectInput items={items} title="Categorías" widthSize={200} />
         </Grid>
       </Grid>
 
